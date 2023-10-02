@@ -18,7 +18,7 @@
 }
 .article .article__item {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 200px;
 }
 .article .article__item .article__item__box {
@@ -29,7 +29,7 @@
   width: 100%;
   padding: 60px 70px;
   left: 130px;
-  overflow: hidden;
+  overflow: unset;
 }
 .article .article__item .article__item__box img {
   margin-right: 50px;
@@ -40,9 +40,10 @@
   font-weight: 400;
   line-height: 28px;
   text-align: left;
+  max-width: 70%;
 }
 .article .article__item .article__item__box h2 {
-  max-width: 480px;
+  max-width: 85%;
   font-size: 21px;
   font-weight: 700;
   line-height: 42px;
@@ -123,8 +124,10 @@
   }
   .article .article__item {
     height: 70px;
+    padding: 0px;
   }
   .article .article__item .article__item__box {
+    overflow: hidden;
     padding: 10px;
     left: 50px;
   }
