@@ -182,11 +182,19 @@
   .header .header__navbar ul {
     display: none;
   }
+  .header .header__section {
+    padding: 5px 8px;
+  }
   .header .header__section p {
     font-size: 8px;
   }
+  .header .header__main {
+    padding: 10px 10px;
+    height: 250px;
+  }
   .header .header__main .header__main__item-1 h2 {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .header .header__main .header__main__item-1 p {
     font-size: 15px;

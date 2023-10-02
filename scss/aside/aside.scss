@@ -1,0 +1,151 @@
+%flex {
+  display: flex;
+  align-items: center;
+}
+.aside {
+  width: 100%;
+  padding: 110px 80px;
+  @extend %flex;
+  flex-direction: column;
+  gap: 50px;
+  .aside__titel {
+    h2 {
+      max-width: 422px;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-align: center;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+  .aside__items {
+    @extend %flex;
+    width: 100%;
+    justify-content: space-around;
+    .aside__items__box {
+      @extend %flex;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        max-width: 220px;
+      }
+    }
+  }
+  button{
+    padding: 13px 25px;
+    color: #fff;
+    background: blue;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+  }
+}
+@media(min-width:770px) and (max-width:989px){
+    .aside{
+        padding: 60px 60px;
+        .aside__items{
+            .aside__items__box{
+                gap:3px;
+                h3{
+                    line-height: 20px; 
+                }
+                p{
+                    line-height: 23px;
+                }
+            }
+        }
+    }
+}
+@media(min-width:447px) and (max-width:770px){
+    .aside{
+        gap:25px;
+        padding: 40px 40px  ;
+        .aside__titel{
+            h2{
+                font-size: 40px;
+                line-height: 40px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .aside__items{
+            .aside__items__box{
+                gap: 5px;
+                img{
+                    width: 50px;
+                }
+                h3{
+                    font-size: 16px;
+                    line-height: 15px;
+
+                }
+                p{
+                    font-size: 10px;
+                    line-height: 15px;
+                }
+
+            }
+        }
+        button{
+            padding: 8px 12px;
+            font-size: 15px;
+        }
+    }
+
+}
+@media(max-width:446px){
+    .aside{
+        gap:25px;
+        padding: 3%   ;
+        .aside__titel{
+            h2{
+                font-size: 25px;
+                line-height: 30px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+        .aside__items{
+            .aside__items__box{
+                gap:5px;
+                img{
+                    width: 40px;
+                }
+                h3{
+                    font-size: 13px;
+                    line-height: 13px;
+
+                }
+                p{
+                    font-size: 8px;
+                    line-height: 13px;
+                }
+
+            }
+        }
+        button{
+            padding: 8px 12px;
+            font-size: 13px;
+        }
+    }
+
+}
