@@ -1,0 +1,249 @@
+%btn {
+  padding: 13px 25px;
+  color: #fff;
+  background: blue;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+%flex {
+  display: flex;
+  align-items: center;
+}
+%width {
+  width: 100%;
+  padding: 15px 80px;
+}
+.header {
+  .header__nav {
+    @extend %flex;
+    justify-content: space-between;
+    @extend %width;
+    background: #0f1035;
+    position: sticky;
+    top: 0px;
+    ul {
+      @extend %flex;
+      gap: 20px;
+      li {
+        a {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 700;
+        }
+      }
+    }
+    button {
+      @extend %btn;
+      cursor: pointer;
+    }
+  }
+  .header__navbar {
+    @extend %width;
+    @extend %flex;
+    justify-content: space-between;
+    ul {
+       display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      li {
+        a {
+          color: #000;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .header__section {
+    background: #d3f1f3;
+    @extend %width;
+    @extend %flex;
+    justify-content: center;
+  }
+  .header__main {
+    width: 100%;
+    height:620px;
+    background-image: url(../../icon/Rectangle.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 40px 80px;
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing:border-box;
+    .header__main__item-1 {
+      @extend %flex;
+      flex-direction: column;
+      h2 {
+        max-width: 480px;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        padding: 5px 20px;
+        line-height: 48px;
+      }
+      p {
+        font-size: 27px;
+        font-weight: 400;
+      }
+    }
+    .header__main__item-2 {
+      input {
+        padding: 13px 100px 13px 22px;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 5px;
+      }
+      input::placeholder {
+        color: #cccccc;
+      }
+      button {
+        @extend %btn;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media(min-width:990px) and (max-width:1200px){
+  .header{
+    .header__main{
+      height: 580px;
+    }
+  }
+}
+@media(min-width:770px) and (max-width:990px){
+  .header{
+    .header__navbar{
+      ul{
+        gap:13px;
+        }
+    }
+    .header__nav{
+      padding: 13px 60px;
+    }
+    .header__navbar{
+      padding: 13px 60px;
+      ul{
+        gap:13px;
+      }
+    }
+  }
+}
+@media (min-width:447px) and (max-width:769px){
+  .header{
+    .header__nav{
+      padding: 10px 25px;
+      ul{
+        gap:10px;
+        li{
+          a{
+            font-size: 10px;
+          }
+        }
+      }
+      button{
+        font-size: 10px;
+padding: 9px 15px;
+font-weight: 400;
+      }
+    }
+    .header__navbar{
+      padding: 10px 25px;
+      .image{
+      width: 100px;
+      }
+      ul{
+        display: none;
+      }
+    }
+    .header__section{
+      p{
+        font-size: 8px;
+      }
+    }
+    .header__main{
+      .header__main__item-1{
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+      .header__main__item-2{
+        input{
+          padding: 10px 20px 10px 10px;
+          font-size: 9px;
+        }
+        
+        button{
+          font-size: 10px;
+          padding: 9px 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+}
+@media (max-width:446px){
+  .header{
+    .header__nav{
+      padding: 10px 25px;
+      ul{
+        gap:10px;
+        li{
+          a{
+            font-size: 10px;
+          }
+        }
+      }
+      button{
+        font-size: 10px;
+padding: 9px 15px;
+font-weight: 400;
+      }
+    }
+    .header__navbar{
+      padding: 10px 25px;
+      .image{
+      width: 100px;
+      }
+      ul{
+        display: none;
+      }
+    }
+    .header__section{
+      p{
+        font-size: 8px;
+      }
+    }
+    .header__main{
+      .header__main__item-1{
+        h2{
+          font-size: 30px;
+        }
+        p{
+          font-size: 15px;
+        }
+      }
+      .header__main__item-2{
+        input{
+          padding: 10px 20px 10px 10px;
+          font-size: 9px;
+        }
+        
+        button{
+          font-size: 10px;
+          padding: 9px 15px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+}
