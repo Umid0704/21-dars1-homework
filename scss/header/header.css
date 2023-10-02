@@ -159,17 +159,18 @@
 }
 @media (max-width: 446px) {
   .header .header__nav {
-    padding: 10px 25px;
+    padding: 8px 20px;
   }
   .header .header__nav ul {
-    gap: 10px;
+    gap: 8px;
+    display: none;
   }
   .header .header__nav ul li a {
     font-size: 10px;
   }
   .header .header__nav button {
-    font-size: 10px;
-    padding: 9px 15px;
+    font-size: 8px;
+    padding: 7px 11px;
     font-weight: 400;
   }
   .header .header__navbar {
@@ -191,12 +192,12 @@
     font-size: 15px;
   }
   .header .header__main .header__main__item-2 input {
-    padding: 10px 20px 10px 10px;
+    padding: 8px 15px 8px 8px;
     font-size: 9px;
   }
   .header .header__main .header__main__item-2 button {
-    font-size: 10px;
-    padding: 9px 15px;
+    font-size: 8px;
+    padding: 7px 11px;
     font-weight: 400;
   }
 }/*# sourceMappingURL=header.css.map */
