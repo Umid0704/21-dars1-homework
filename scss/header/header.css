@@ -21,8 +21,9 @@
 .header .header__nav {
   justify-content: space-between;
   background: #0f1035;
-  position: sticky;
+  position: fixed;
   top: 0px;
+  z-index: 2;
 }
 .header .header__nav ul {
   gap: 20px;

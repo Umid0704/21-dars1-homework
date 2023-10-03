@@ -1,0 +1,55 @@
+.logotip .logotip__container .logotip__items .logotip__box, .logotip .logotip__container, .logotip {
+  display: flex;
+  align-items: center;
+}
+
+.logotip {
+  padding: 100px 0;
+  flex-direction: column;
+  gap: 70px;
+}
+.logotip__titel h2 {
+  max-width: 700px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+.logotip__titel p {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 20px;
+}
+.logotip .logotip__container {
+  flex-direction: column;
+  width: 100%;
+}
+.logotip .logotip__container button {
+  padding: 13px 25px;
+  color: #fff;
+  background: blue;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  margin-top: 70px;
+}
+.logotip .logotip__container .logotip__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.logotip .logotip__container .logotip__items .logotip__box {
+  flex-direction: column;
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  .logotip {
+    padding: 80px 0;
+  }
+  .logotip .logotip__container .logotip__items .logotip__box img {
+    width: 150px;
+  }
+  .logotip .logotip__title h2 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=logotip.css.map */
